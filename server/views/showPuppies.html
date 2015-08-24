@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<h1>Showing Puppies</h1>
+
+<p class = 'success'>Puppy Saved Successfully</p>
+
+<table class = 'table'>
+  <tr>
+    <th>Puppy Name</th>
+    <th>Puppy ID</th>
+  </tr>
+
+{% for puppy in puppyArray %}
+
+  <tr>
+    <td>{{puppy.name}}</td>
+    <td>{{puppy.id}}</td>
+  </tr>
+
+  {% endfor %}
+</table>
+
+
+
+
+{% endblock %}
