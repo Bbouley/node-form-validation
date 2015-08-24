@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<h1>Showing Peoples</h1>
+
+<p class = 'success'>Person Saved Successfully</p>
+
+<table class = 'table'>
+  <tr>
+    <th>Name</th>
+    <th>Hobby</th>
+  </tr>
+
+{% for person in peopleArray %}
+
+  <tr>
+    <td>{{person.name}}</td>
+    <td>{{person.hobby}}</td>
+  </tr>
+
+  {% endfor %}
+</table>
+
+
+
+
+{% endblock %}
